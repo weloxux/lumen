@@ -14,7 +14,7 @@ lumen: lumen.o
 	$(CC) $(LDFLAGS) -Os -o $@ $+ $(LDADD)
 
 install: all
-	install -Dm 755 catwm $(DESTDIR)$(BINDIR)/lumen
+	install -Dm 755 lumen $(DESTDIR)$(BINDIR)/lumen
 
 clean:
 	rm -f lumen lumen.o
